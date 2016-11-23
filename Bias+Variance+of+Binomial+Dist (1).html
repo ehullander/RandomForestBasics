@@ -11776,7 +11776,7 @@ div#notebook {
 <li>Interpretability: Why did the model choose this result?  </li>
 <li>Accuracy:   <ul>
 <li>Are the predictions correct?   </li>
-<li>Do the results generalize to new data?  </li>
+<li>Does the model generalize to new data?  </li>
 </ul>
 </li>
 <li>Efficiency:   <ul>
@@ -11798,7 +11798,7 @@ div#notebook {
 <li>Efficiency:  Greedy algorithm is O(C n log n) where C are number of features and n are number of samples.</li>
 <li>Robust to Dimensionality:  Dimensionality does not compromise accuracy</li>
 <li>Robust to Irrelevancy: Trees perform automatic feature selection based on GINI impurity or information gain.  Irrelevant features just aren’t used</li>
-<li>Robust to Collinearity: If two variables are collinear, the can use one or the other making one of the two unimportant to the model when they are equally important</li>
+<li>Robust to Collinearity: If two variables are collinear, the model can use one or the other.  This doesn't affect accuracy, but may compromise interpretability</li>
 <li>Robust to Scaling:  Scaling and many transformations e.g. log(x) would not affect where the tree splits if using GINI impurity or information gain.</li>
 </ul>
 
